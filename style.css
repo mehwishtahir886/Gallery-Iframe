@@ -1,0 +1,140 @@
+*{
+    padding:0;
+    margin:0;
+    list-style:none ;
+}
+a{
+    color:black;
+    text-decoration: none;
+}
+.container{
+    position:absolute;
+    height:150vh;
+    width:100%;
+}
+.nav{
+    position:fixed;
+    width:20%;
+    height:100vh;
+    background-image:linear-gradient(rgb(194, 86, 86), rgb(36, 94, 36));
+    display:grid;
+    align-items:space-evenly;
+    justify-content: center;
+
+}
+.nav img{
+    height:17vh;
+    width:17vh;
+}
+.one li{
+    position:relative;
+    text-align: center;
+    text-transform:capitalize;
+    font-size:1.4rem;
+    line-height:3rem;
+}
+.one li a::after{
+    content:"";
+    position:absolute;
+    left:27%;
+    height:5vh;
+    width:0;
+    border-bottom:3px solid rgb(150, 62, 62);   
+}
+.one li a:hover::after{
+   width:45%;
+   transition-duration: .30s;
+
+}
+.two{
+width:100%;
+display:flex;
+justify-content: space-between;
+}
+.two li{
+    background:rgb(150, 62, 62);
+    height:6vh;
+    width:6vh;
+    text-align: center;
+    line-height:3rem;
+    border-radius:50%;
+    color:black;
+}
+.two li:hover{
+    background:rgb(60, 156, 60);
+}
+.showcase{
+    height:100vh;
+    display:grid;
+    grid-template-columns:auto auto auto auto; 
+    grid-template-rows:repeat(8, auto);
+    grid-gap:10px;
+}
+.showcase img{
+    width:100%;
+    height:100%;
+    box-shadow:5px 2px 3px 5px rgb(85, 133, 85);
+}
+.showcase img:hover{
+    box-shadow:4px 4px 3px 5px rgb(192, 91, 66);
+    transform:scale(.9);
+}
+.item1{
+    position:relative;
+    grid-area:1/1/4/2;
+}
+.item2{
+    position:relative;
+    grid-area:1/2/3/3;
+}
+.item3{
+    position:relative;
+    grid-area:1/3/3/4;
+}
+.item4{
+    position:relative;
+    grid-area:1/4/4/5;
+}
+.item5{
+    position:relative;
+    grid-area:3/2/7/4;
+} 
+.item6{
+    position:relative;
+    grid-area:4/1/6/2;
+}
+.item7{
+    position:relative;
+    grid-area:4/4/6/5;
+}
+.item9{
+    position:relative;
+    grid-area:7/3/9/4;
+}
+.item10{
+    position:relative;
+    grid-area:6/1/9/2;
+}
+.item11{
+    position:relative;
+    grid-area:7/2/9/3;
+}
+.item12{
+    position:relative;
+    grid-area:6/4/9/5;
+}
+.item{
+    position:absolute;
+    content:"photo-12";
+    left:0;
+    height:100%;
+    width:100%;
+    text-align: center;
+    line-height: 8rem;
+    font-size:3rem;
+    text-transform: capitalize;
+    color:rgb(248, 131, 101);
+    background:rgba(0, 0, 0, .5);
+    opacity:0;
+}
+
